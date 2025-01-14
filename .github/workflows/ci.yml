@@ -29,6 +29,12 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Debug PYTHONPATH
+        run: echo $PYTHONPATH
+        env:
+          PYTHONPATH: ${{ github.workspace }}/src
+
+
       # Step 4: Run tests
       - name: Run tests
         env:
