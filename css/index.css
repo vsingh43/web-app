@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.side-nav{
+    width: 250px;
+    height: 100vh;
+    background-color: rgb(4, 2, 0);
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    bottom: 0%;
+    color: #fff;
+    z-index: 1000;
+    animation:fadeOutLeft;
+    animation-duration:0.6s;
+
+
+
+}
+
+.side-nav .top-nav-box .img-box {
+    width: 120px;
+    height: 120px;
+    background-color: grey;
+    border-radius:50%;
+    display: flexbox;
+ align-items: center;
+    justify-content: center;
+}
+.side-nav .top-nav-box .img-box .img {
+    width: 120px;
+    height: 120px;
+    background-color: grey;
+    border-radius:50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../images/Vikash_Singh.png);
+}
+.side-nav .nav-icon-box i{
+    padding : 10px;
+    background-color: rgb(222, 186, 7);
+    font-size: 19px;
+    border-radius: 50%;
+}
+.side-nav .nav-icon-box a{
+    text-decoration: none;
+}
+.side-nav .center-nav-box .list-group li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+
+}
+.side-nav .center-nav-box .list-group li i{
+    color: #ffffff;
+    font-size: 18px;
+}
+.side-nav .center-nav-box .list-group li:hover a,.side-nav .center-nav-box .list-group li:hover i{
+    color: rgb(11, 11, 247);
+
+
+}
+.side-nav .nav-icon-box i:hover {
+    color: black;
+}
+.side-nav.active{
+    opacity: 1;
+    animation:fadeInLeft;
+    animation-duration:0.6s
+} 
+.bottom-nav-box p{
+    position: fixed;
+    bottom: 0;
+}
+/* start hero bg*/
+.hero-bg{
+    width: 100%;
+    height:100vh;
+    background-image: url(../images/PHOTO1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-attachment: fixed;
+    background-position-x: right;
+    background-position-y:top;
+}
+.hero-bg-shadow-box{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    left:0;
+    top: 0;
+position: absolute;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+color: #ffffffc5;
+}
+.hero-bg .hero-bg-shadow-box h1{
+    font-size: 35px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #fff;
+    
+}
+.hero-bg .hero-bg-shadow-box h4{
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #fff;
+    
+    
+}
+.hero-bg .hero-bg-shadow-box h4 span{
+    color: rgba(233, 193, 11, 0.856);
+}
+.hero-bg button{
+color: #fff;
+z-index: 1000;
+font-size: 30px;
+opacity: 0;
+background-color: transparent;
+}
+/* end hero */
+/* start underline code */
+.about-section h2::after,.resume-section h2::after {
+    content:'';
+    position:relative;
+    display:block;
+    width :50px;
+    height: 3px;
+    background: blue;
+    top: 10px;
+    bottom:0;
+    left: 0;
+}
+/* end */
+/* Responsive coding */
+@media(max-width:1000px){
+    .side-nav{
+        opacity:0;
+    }
+    .hero-bg button{
+        opacity: 1;
+    }
+}
+/* End responsive coding */
+
